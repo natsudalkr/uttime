@@ -31,7 +31,7 @@ unzip Xerces-J-bin.2.11.0.zip
 wget http://www.cafeconleche.org/XOM/xom-1.0d8.jar
 ```
 
-##Download liblinear
+###Download liblinear
 ```
 wget http://www.bwaldvogel.de/liblinear-java/liblinear-java-1.95.jar
 ```
@@ -66,13 +66,13 @@ script/preproc_enju_test.sh
 java tempeval/CTRPreprocessFeature data/te3-platinum data/feature_test data/enju_test
 ```
 
-##Train the models
+###Train the models
 ```
 mkdir output
 java tempeval/TempEval3 train data/feature output true
 ```
 
-###Test
+###Test the models
 ```
 java tempeval/TempEval3 test data/feature_test output true
 ```
